@@ -7,8 +7,8 @@ steps:
   
 - wait
 
-- label: "deploy"
-  command: .buildkite/scripts/deploy.sh
+- label: "test"
+  command: .buildkite/scripts/test.sh
   plugins:
     - docker-compose#v3.7.0:
         run: app
