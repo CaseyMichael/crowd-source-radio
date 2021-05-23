@@ -1,9 +1,9 @@
 steps:
 - label: ":docker: Build"
   command: "echo hello world"
-#   plugins:
-#     - docker-compose#v3.7.0:
-#         build: app
+  plugins:
+    - docker-compose#v3.7.0:
+        build: app
   
 # - wait
 
