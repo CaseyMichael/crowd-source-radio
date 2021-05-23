@@ -5,10 +5,10 @@ steps:
     - docker-compose#v3.7.0:
         build: app
   
-# - wait
+- wait
 
-# - label: "deploy"
-#   command: .buildkite/scripts/deploy.sh
-#   plugins:
-#     - docker-compose#v3.7.0:
-#         run: app
+- label: "deploy"
+  command: .buildkite/scripts/deploy.sh
+  plugins:
+    - docker-compose#v3.7.0:
+        run: app
