@@ -1,6 +1,5 @@
 steps:
 - label: ":docker: build"
-  command: "echo hello world"
   plugins:
     - docker-compose#v3.7.0:
         build: app
@@ -8,7 +7,7 @@ steps:
 - wait
 
 - label: "test"
-  command: .buildkite/scripts/test.sh
+  command: "npm run test"
   plugins:
     - docker-compose#v3.7.0:
         run: app
