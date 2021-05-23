@@ -2,7 +2,7 @@ steps:
   - label: ":docker: Build"
     plugins:
       - docker-compose#v3.7.0:
-        build: app
+          build: app
     
   - wait
 
@@ -10,4 +10,4 @@ steps:
     command: .buildkite/scripts/deploy.sh
     plugins:
       - docker-compose#v3.7.0:
-        run: app
+          run: app
