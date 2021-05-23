@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-npm build
+npm run build
 gcloud app deploy --project=peters-313902
